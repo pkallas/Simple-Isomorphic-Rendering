@@ -1,0 +1,159 @@
+html {
+  font-size: 62.5%;
+}
+
+.nav {
+  background-color: rgb(248, 248, 248);
+  width: 10%;
+  position: absolute;
+  top: 4rem;
+}
+
+.navbar {
+  background-color: rgb(248, 248, 248);
+  position: absolute;
+  height: 5rem;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.nav li {
+  position: relative;
+  display: block;
+  background-color: rgb(248, 248, 248);
+  left: -5rem;
+  width: 20rem;
+  text-align: center;
+}
+
+.nav li a {
+  display: -webkit-box;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: #777;
+  font-size: 6rem;
+  font-family: 'Open Sans';
+}
+
+#hamburger {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 9rem;
+  padding: 0 0 0 0;
+}
+
+input[type=checkbox]:checked + label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 9rem;
+}
+
+.navbar-icon label {
+  font-size: 9rem;
+}
+
+.navbar-title {
+  position: absolute;
+  font-family: 'Fugaz One';
+  z-index: 5000;
+  color: #777;
+  font-size: 8rem;
+  top: -1.5rem;
+  left: 25.5rem;
+}
+
+.list {
+  display: none;
+}
+
+input[type=checkbox]:checked + label ~ .list {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-icon {
+    display: none;
+  }
+
+  .list {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: -1rem;
+    left: 80rem;
+  }
+
+  .nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav li {
+    float: left;
+  }
+
+  .nav li a {
+    padding: 10px;
+  }
+
+  .nav li a:hover {
+    background-color: lightgray;
+    color: #777;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .nav {
+    width: 40%;
+  }
+
+  .nav ul {
+    margin: 0;
+    padding: 0;
+    left: 5rem;
+    width: 0;
+  }
+
+  .nav li a {
+    font-size: 2rem;
+    height: 3rem;
+  }
+
+  .nav li {
+    width: auto;
+    height: 3rem;
+  }
+
+  .navbar-title {
+    font-size: 4rem;
+    top: -3rem;
+    left: 10rem;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  html {
+    font-size: 13.88%;
+  }
+
+  .navbar-title {
+    display: none;
+  }
+}
