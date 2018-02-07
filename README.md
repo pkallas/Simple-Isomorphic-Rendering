@@ -2,8 +2,8 @@
 
 ### Authors
 
-[Johnathon Lubaway](https://github.com/NeoJax)
-[Patrick Kallas](https://github.com/pkallas)
+- [Johnathon Lubaway](https://github.com/NeoJax)
+- [Patrick Kallas](https://github.com/pkallas)
 
 ### Overview
 
@@ -24,12 +24,32 @@ npm start
 
 Navigate to localhost:3000
 
+Navigate to src/client/Navbar and copy the directory to wherever you'd like!
+Depending on your Webpack and Babel configurations, you may need to remove the
+import './index.css' statement on line 3, and convert the styles into inline
+styling or transfer them to your own stylesheet.
+
+The component itself takes a prop called links. The prop should be formatted as
+an array of strings like so:
+['/Home', '/AnotherPage', '/YetAnotherPage']
+
+For an example, see line 9 in src/client/app/index.js
+
 Done!
 
 ### Usage of component by itself
 
 Clone the repository
+
 Navigate to src/client/Navbar and copy the directory to wherever you'd like!
 Depending on your Webpack and Babel configurations, you may need to remove the
 import './index.css' statement on line 3, and convert the styles into inline
 styling or transfer them to your own stylesheet.
+
+The component itself takes a prop called links. The prop should be formatted as
+an array of strings like so:
+['/Home', '/AnotherPage', '/YetAnotherPage']
+
+For an example, see line 9 in src/client/app/index.js
+
+### Thanks for reading!
