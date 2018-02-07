@@ -1,0 +1,11 @@
+.page-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-center > h1 {
+  font-weight: bold;
+  position: relative;
+  top: 5rem;
+}

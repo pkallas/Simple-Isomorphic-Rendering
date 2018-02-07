@@ -16,6 +16,20 @@ Webpack has been configured to bundle any imported css files it finds into one
 style.css sheet. Babel has been configured so that node can correctly parse the
 import './index.css' statement when it serves the distributed build.
 
+### Console Warning
+
+You may notice a warning in the console when you launch the application.
+The warning is as follows:
+"Warning: Text content did not match. Server: "â˜°" Client: "☰""
+
+This is because if you look in src/client/Navbar on line 21, you will see &#9776;
+In the browser, this HTML is evaluated as the hamburger icon you may typically
+see on an iPhone app. When node evaluates server/server.js, it reads &#9776; as
+"â˜°", yet React is warning that on the client it gets evaluated to "☰".
+
+I have not yet found a solution to this issue that doesn't involve installing a
+third party library. Any advice would be greatly appreciated!
+
 ### Usage
 
 Clone the repository
