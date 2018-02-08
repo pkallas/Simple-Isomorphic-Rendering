@@ -7,14 +7,15 @@
 
 ### Overview
 
-This is a navbar component that can be used in react applications. If you just
-want the component, you can find it in the src/client/Navbar directory. Otherwise,
-you can see a simple example of using isomorphic rendering to render a React app
-using node and javascript for the server. One thing to note is that the styles
-for the navbar are included in a separate css file in the Navbar directory.
-Webpack has been configured to bundle any imported css files it finds into one
-style.css sheet. Babel has been configured so that node can correctly parse the
-import './index.css' statement when it serves the distributed build.
+This is a navbar component that can be used in react applications. Feel free to
+fork and/or clone the repo and use it as a starting template for a new React
+application. If you just want the component, you can find it in the src/client/Navbar
+directory. Otherwise, you can see a simple example of using isomorphic rendering
+to render a React app using node and javascript for the server. One thing to note
+is that the styles for the navbar are included in a separate css file in the Navbar
+directory. Webpack has been configured to bundle any imported css files it finds
+into one style.css sheet. Babel has been configured so that node can correctly
+parse the import './index.css' statement when it serves the distributed build.
 
 Due to using isomorphic rendering, this is an example of how you could create a
 React application, and users who have disabled javascript can still view and
@@ -54,6 +55,22 @@ an array of strings like so:
 For an example, see line 9 in src/client/app/index.js
 
 Done!
+
+### Developer Usage
+
+Clone the repository
+npm install in your terminal
+
+There are three commands that should be running in three different instances of
+your terminal. You can choose to just run npm start, but as you make changes, you
+will have to stop the server and run the command again to see any changes. To avoid
+this, run these three commands simultaneously.
+
+npm run build
+npm run webpack
+npm run start:dev
+
+Now, if you make any changes, you just need to refresh the browser to see the changes.
 
 ### Usage of component by itself
 

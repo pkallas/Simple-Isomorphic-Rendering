@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rm -rf dist && BABEL_ENV=server babel ./src/server/server.js -d dist/ src/ && webpack && node dist/server/server.js"
+    "start": "rm -rf dist && BABEL_ENV=server babel ./src/server/server.js -d dist/ src/ && webpack && node dist/server/server.js",
+    "build": "rm -rf dist && BABEL_ENV=server babel ./src/server/server.js -d --watch dist/ src/",
+    "webpack": "webpack --watch",
+    "start:dev": "nodemon dist/server/server.js"
   },
   "repository": {
     "type": "git",
@@ -33,6 +36,7 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.2",
+    "nodemon": "^1.14.12",
     "postcss": "^6.0.17",
     "style-loader": "^0.20.1",
     "webpack": "^3.10.0"
