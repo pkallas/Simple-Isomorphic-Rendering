@@ -4,6 +4,14 @@
   align-items: center;
 }
 
+.page-center-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5rem;
+}
+
 .page-center > h1 {
   font-weight: bold;
   position: relative;

@@ -11,6 +11,11 @@ router.use('*', (req, res) => {
   res.write(`<!DOCTYPE html>
   <html>
     <head>
+      <noscript>
+        <div class="page-center-down">
+          <b>Even with javascript disabled, this will still work thanks to isomorphic rendering!</b>
+        </div>
+      </noscript>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
       <link rel="stylesheet" href="/style.css">

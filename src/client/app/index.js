@@ -10,9 +10,6 @@ export default class App extends Component {
         <Navbar links={['/Home', '/Second', '/Third', '/Fourth', '/Fifth']} />
         <Switch>
           <Route exact path="/" component={HelloWorld} />
-          <Route exact path="/Home" render={props => (
-            <HelloWorld planet="Mercury!" />
-          )} />
           <Route exact path="/Second" render={props => (
             <HelloWorld planet="Venus!" />
           )} />

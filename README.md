@@ -16,6 +16,10 @@ Webpack has been configured to bundle any imported css files it finds into one
 style.css sheet. Babel has been configured so that node can correctly parse the
 import './index.css' statement when it serves the distributed build.
 
+Due to using isomorphic rendering, this is an example of how you could create a
+React application, and users who have disabled javascript can still view and
+interact with your page.
+
 ### Console Warning
 
 You may notice a warning in the console when you launch the application.

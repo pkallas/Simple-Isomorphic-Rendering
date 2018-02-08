@@ -5,6 +5,14 @@ import './index.css';
 export default class Navbar extends Component {
   renderLinks() {
     return this.props.links.map((link, index) => {
+      if (link.replace(/\//, '') === 'Home' || link.replace(/\//, '') === 'home') {
+        return (
+          <li className="item" key={index}>
+            <Link to={'/'}>{link.replace(/\//, '')}</Link>
+          </li>
+        );
+      }
+
       return (
         <li className="item" key={index}>
           <Link to={link}>{link.replace(/\//, '')}</Link>
