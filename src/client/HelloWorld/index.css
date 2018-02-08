@@ -12,6 +12,10 @@
   top: 5rem;
 }
 
+.page-center-down > div {
+  font-size: 2rem;
+}
+
 .page-center > h1 {
   font-weight: bold;
   position: relative;
