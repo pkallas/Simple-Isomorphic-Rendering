@@ -1,4 +1,4 @@
-## Reusable Navbar for React Applications
+## Simple Isomorphic Rendering
 
 ### Authors
 
