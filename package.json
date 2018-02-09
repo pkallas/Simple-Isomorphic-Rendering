@@ -41,5 +41,9 @@
     "postcss": "^6.0.17",
     "style-loader": "^0.20.1",
     "webpack": "^3.10.0"
+  },
+  "engines": {
+    "node": "8.5.0",
+    "npm": "5.6.0"
   }
 }
